@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Browser tab header part -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishnudas</title>
+    <link rel="stylesheet"  type=text/css href="asset/css/style.css">
+    <link href="asset/css/all.css" rel="stylesheet"> 
+    <!-- browser tab icon -->
+    <link rel="icon" href="assets/images/vimeo.png">
+    <!-- Include the JavaScript file -->
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/abea8866ec.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet"  type=text/css href="assets/css/style.css">
+    <link href="assets/css/all.css" rel="stylesheet">  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        } */
+        html{
+            font-family: 'Open Sans';
+            scroll-behavior: smooth;
+            background-color:  rgb(243, 239, 239);
+            /* background-color:  white; */
+        }
+        .profile{
+            margin-top: 50px;
+            /* background-color: aqua; */
+            text-align: center;
+        }
+        .navigationlink{
+            list-style:none;
+            font-size: 16px;  
+        }
+        .navigationlink li{
+            display: inline-block;
+            padding: 0px 20px;  
+        }
+        .navigationlink li a{
+            color:  #808080;
+            text-decoration: none;
+        }
+        .navigationlink li a:hover {
+            color: black;
+        }
+        #personName{
+            font-size: 60px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+        #websiteType{
+            color: #808080;
+            letter-spacing: 2px;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+        header{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .ftr{
+            text-align: center;
+        }
+        .socialmedia{
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        .socialmediaicons{
+            list-style: none;
+            font-size: 1.4rem;
+        }
+        .socialmediaicons li{
+            display: inline-block;
+            padding: 0 8px;
+            transition:all 0.3s ease 0s ;
+        }
+        .socialmediaicons li a{
+            color: #db345e;
+        }
+        .socialmediaicons li:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="profile">
+            <!-- the section to display my name and website type and navigations -->
+            <div class="profiledetails">
+                <p id="personName"style="padding: 0; margin: 0;">vishnudas</p>
+                <p id="websiteType" >personal / professional</p>
+            </div>
+            <!-- Section that displays the navigation bar -->
+            <hr style="width: 60%; margin: auto;" >
+            <header>
+                <nav class="navigation_bar">
+                    <ul class="navigationlink">
+                        <li><a href="#" onclick="loadContent('homeSection')">home</a></li>
+                        <li><a href="#" onclick="loadContent('aboutMeSection')">about</a></li>
+                        <li><a href="#" onclick="loadContent('myWorkSection')">work</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <hr style="width: 60%; margin: auto;" >
+        </div>
+        <!-- Content section to be dynamically updated -->
+        <div id="content" class="contentSection" style="background-color: rgb(243, 239, 239); width: 60%; margin-top: 40px; margin-bottom: 40px; margin-left: auto;margin-right: auto;" >
+            <!-- Initial content will be loaded here -->
+        </div>
+    </div>
+    <!-- footer section -->
+    <footer class="ftr">
+        <div class="socialmedia">
+            <ul class="socialmediaicons">
+                <li><a href="https://github.com/VISHNUDAS-tunerlabs"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/vishnu-das-148722213"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/___vishnudas___"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
